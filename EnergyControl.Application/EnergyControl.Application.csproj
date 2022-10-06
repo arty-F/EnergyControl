@@ -11,6 +11,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\EnergyControl.Domain\EnergyControl.Domain.csproj" />
+		<ProjectReference Include="..\EnergyControl.Infrastructure\EnergyControl.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>
