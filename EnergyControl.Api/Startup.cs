@@ -1,3 +1,4 @@
+using EnergyControl.Api.Filters;
 using EnergyControl.Application;
 using EnergyControl.Infrastructure;
 using Microsoft.AspNetCore.Builder;
@@ -23,7 +24,7 @@ namespace EnergyControl.Api
         {
             services.AddInfrastructure();
             services.AddApplication();
-            services.AddControllers();
+            services.AddControllers(o => o.Filters.Add<ErrorHandlingFilter>());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EnergyControl.Api", Version = "v1" });
