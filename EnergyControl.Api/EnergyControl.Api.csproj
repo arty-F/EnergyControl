@@ -12,4 +12,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EnergyControl.Application\EnergyControl.Application.csproj" />
+    <ProjectReference Include="..\EnergyControl.Infrastructure\EnergyControl.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
