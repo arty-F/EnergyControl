@@ -1,3 +1,4 @@
+using EnergyControl.Application;
 using EnergyControl.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -21,6 +22,7 @@ namespace EnergyControl.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructure();
+            services.AddApplication();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
