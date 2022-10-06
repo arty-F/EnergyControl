@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyControl.Api", "EnergyControl.Api\EnergyControl.Api.csproj", "{26DEB1EB-E2DE-4F15-8D58-574B691D1D79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyControl.Api", "EnergyControl.Api\EnergyControl.Api.csproj", "{26DEB1EB-E2DE-4F15-8D58-574B691D1D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyControl.Application", "EnergyControl.Application\EnergyControl.Application.csproj", "{AA96D999-AA71-4B5F-AD37-12BCDAD58E87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyControl.Domain", "EnergyControl.Domain\EnergyControl.Domain.csproj", "{91830805-98AB-4FF8-B947-9524E5FFBB29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyControl.Infrastructure", "EnergyControl.Infrastructure\EnergyControl.Infrastructure.csproj", "{718968D6-C30B-4B07-90F5-3D10C77DA7FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{26DEB1EB-E2DE-4F15-8D58-574B691D1D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26DEB1EB-E2DE-4F15-8D58-574B691D1D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26DEB1EB-E2DE-4F15-8D58-574B691D1D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA96D999-AA71-4B5F-AD37-12BCDAD58E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA96D999-AA71-4B5F-AD37-12BCDAD58E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA96D999-AA71-4B5F-AD37-12BCDAD58E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA96D999-AA71-4B5F-AD37-12BCDAD58E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91830805-98AB-4FF8-B947-9524E5FFBB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91830805-98AB-4FF8-B947-9524E5FFBB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91830805-98AB-4FF8-B947-9524E5FFBB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91830805-98AB-4FF8-B947-9524E5FFBB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{718968D6-C30B-4B07-90F5-3D10C77DA7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718968D6-C30B-4B07-90F5-3D10C77DA7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718968D6-C30B-4B07-90F5-3D10C77DA7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718968D6-C30B-4B07-90F5-3D10C77DA7FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
