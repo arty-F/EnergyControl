@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using EnergyControl.Application.Persistence;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EnergyControl.Application
 {
@@ -6,6 +8,8 @@ namespace EnergyControl.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddMediatR(typeof(DependencyInjection).Assembly);
             return services;
         }
     }
