@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<Nullable>enable</Nullable>
@@ -7,17 +7,14 @@
 
 	<ItemGroup>
 		<PackageReference Include="MediatR" Version="9.0.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.17" />
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\EnergyControl.Application\EnergyControl.Application.csproj" />
 		<ProjectReference Include="..\EnergyControl.Contracts\EnergyControl.Contracts.csproj" />
+		<ProjectReference Include="..\EnergyControl.Domain\EnergyControl.Domain.csproj" />
 		<ProjectReference Include="..\EnergyControl.Infrastructure\EnergyControl.Infrastructure.csproj" />
 	</ItemGroup>
 
